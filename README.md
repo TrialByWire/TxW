@@ -25,7 +25,7 @@ Command Shell
 Listen for incoming connections and open a command shell:
 
 
-Copy code
+Copy command
 python netcat.py -t 192.168.1.108 -p 5555 -l -c
 File Upload
 Listen for incoming connections and upload a file:
