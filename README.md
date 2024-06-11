@@ -1,6 +1,6 @@
 Trial By Wire 
 Author:  KH 
-
+Tool Here --> https://github.com/TrialByWire/TxW/blob/main/netcat.py
 
 BHP Net Tool
 This repository contains a Python implementation of a NetCat-like tool inspired by the "Black Hat Python" book. The tool can be used for command execution, file upload, and as a simple command shell.
