@@ -1,3 +1,7 @@
+Trial By Wire 
+Author:  KH 
+
+
 BHP Net Tool
 This repository contains a Python implementation of a NetCat-like tool inspired by the "Black Hat Python" book. The tool can be used for command execution, file upload, and as a simple command shell.
 
@@ -20,32 +24,28 @@ Examples
 Command Shell
 Listen for incoming connections and open a command shell:
 
-sh
+
 Copy code
 python netcat.py -t 192.168.1.108 -p 5555 -l -c
 File Upload
 Listen for incoming connections and upload a file:
 
-sh
-Copy code
+Copy command
 python netcat.py -t 192.168.1.108 -p 5555 -l -u=mytest.txt
 Execute Command
 Listen for incoming connections and execute a command:
 
-sh
-Copy code
+Copy command
 python netcat.py -t 192.168.1.108 -p 5555 -l -e="cat /etc/passwd"
 Send Data
 Send text to a server:
 
-sh
-Copy code
+Copy command
 echo 'ABC' | python netcat.py -t 192.168.1.108 -p 135
 Connect to Server
 Connect to a server:
 
-sh
-Copy code
+Copy command
 python netcat.py -t 192.168.1.108 -p 5555
 Implementation
 The main functionality is implemented in the NetCat class, which supports both sending and receiving data, depending on the provided command line arguments. The execute function is used to run shell commands and return their output.
